@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Container } from "reactstrap";
 
-const Jumbo = ({ state }, props) => {
+const Jumbo = () => {
   return (
     <div>
       
@@ -11,9 +11,6 @@ const Jumbo = ({ state }, props) => {
           <h3 className="lead text-danger font-weight-bold">
             Sell & Buy art from art students
           </h3>
-          <ol style={{display: "block",flexWrap: "nowrap"}}>
-           {state.map((state =>{return(<li>{state.artistName}</li>)}))}
-          </ol>
         </Container>
       </Jumbotron>
     </div>

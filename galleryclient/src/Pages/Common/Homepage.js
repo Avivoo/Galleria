@@ -3,6 +3,7 @@ import Jumbo from "../Components/Jumbo/Jumbo";
 import Artcards from "../Components/ArtCards/Artcards";
 import Pagination from "../Components//Pagination/Pagination";
 import Carousel from "../Components/Carousel/Carousel";
+import List from "../Components/Lists/List"
 import {
   Form,
   FormGroup,
@@ -117,7 +118,8 @@ const Homepage = props => {
   return (
     <Router>
       <div>
-        <Jumbo state={state}/>
+        <Jumbo />
+        <List state={state} />
         <Carousel />
         <Button color="warning" onClick={toggle}>
           {buttonLabel} Add your Art
